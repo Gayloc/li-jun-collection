@@ -4,7 +4,6 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-
   title: '李立军选集',
   description: '呼市二中一位伟大的思想家的部分演讲收录',
 
@@ -27,6 +26,26 @@ export default defineUserConfig({
       '/关于二中灰色文化的讲演',
       '/宣扬努力实干的外衣下粉饰对金钱权力赤裸裸的拜金主义',
     ],
+    locales: {
+      '/': {
+        editLinkText: '在 GitHub 上编辑此页',
+        lastUpdatedText: '上次更新',
+        contributorsText: '贡献者',
+        tip: '📌提示',
+        warning: '❗注意',
+        danger: '⚡警告',
+        notFound: [
+          '这里什么都没有',
+          '我们怎么到这来了？',
+          '这是一个 404 页面',
+          '看起来我们进入了错误的链接',
+        ],
+        backToHome: '返回首页',
+        openInNewWindow: '在新窗口打开',
+        toggleColorMode: '切换颜色模式',
+        toggleSidebar: '切换侧边栏',
+      }
+    },
   }),
 
   bundler: viteBundler(),
